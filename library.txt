@@ -1,0 +1,14 @@
+frist:
+    pip install flask
+
+    pip install flask_wtf
+
+    pip install flask_sqlalchemy
+
+    pip install pymysql
+    
+    
+end:
+    read file config.py 
+    
+    python3 app.py

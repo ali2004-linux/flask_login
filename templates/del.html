@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>delete user</title>
+</head>
+<body>
+	<form action="/del_res" method="POST" style="margin-top: 30px;margin-left: 35%;border-radius: 10px;width: 300px;height: 300px;background-color: #dde;">
+		{{ loginform.hidden_tag() }}
+		{{ loginform.username.label(style="margin-top:10px;margin-left:10px;") }}: {{ loginform.username(style="color:blue;margin-top:10px;margin-left:30px;") }}<br><br>
+		{{ loginform.password.label(style="margin-top:10px;margin-left:10px;") }}: {{ loginform.password(style="color:red;margin-top:10px;margin-left:35px;") }}<br><br>
+		{{ loginform.email.label(style="margin-top:10px;margin-left:10px;") }}: {{ loginform.email(style="color:red;margin-top:10px;margin-left:35px;") }}<br><br>
+		<input type="submit" value="delete" style="margin-left: 40%;margin-top: 10px;"><br>
+	</form>
+</body>
+</html>
